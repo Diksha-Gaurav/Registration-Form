@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Registration...</h1>
+    </header>
+    <div>
+      <h2>Admission Form</h2>
+    </div>
+    <div class="form" id="Admission">
+      <form action="#">
+        <div class="Person-name">
+          <div>
+            <h3>Personal Details</h3>
+          </div>
+
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="Username"
+            id="Fname"
+            placeholder="First Name..."
+            required
+          />
+          <input
+            type="text"
+            name="Username"
+            id="Lname"
+            placeholder="Last Name..."
+            required
+          />
+        </div>
+        <div class="Person-name">
+          <label for="name">Father's Name</label>
+          <input
+            type="text"
+            name="Username"
+            id="Fathername"
+            placeholder="Enter Name"
+            required
+          />
+          <label for="name">Mother's Name</label>
+          <input
+            type="text"
+            name="Username"
+            id="Mothername"
+            placeholder="Enter Name"
+            required
+          />
+        </div>
+        <div class="dob">
+          <label for="DOB">Date of Birth</label>
+          <input type="date" name="Date" id="DOB" required />
+          <div>
+            <label for="Email">Email- ID</label>
+            <input
+              type="email"
+              name="EMail"
+              id="Mail"
+              placeholder="eg: aktuvihan454@gmail.com"
+            />
+          </div>
+        </div>
+
+        <div class="address">
+          <div>
+            <h3>Address Details</h3>
+          </div>
+          <label for="add">Temporary Address</label>
+          <input
+            type="text"
+            name="temporary_address"
+            id="add"
+            placeholder="Enter your address"
+          />
+          <label for="state">State</label>
+          <select id="state" name="temporary_state">
+            <option value="">Select a state...</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CG">Chhattisgarh</option>
+            <option value="DH">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OD">Odisha</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TS">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UK">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+          </select>
+          <hr />
+          <div>
+            <label for="Permanent Address">Permanent Address</label>
+            <input
+              type="text"
+              name="permanent_address"
+              id="add"
+              placeholder="Enter your permanent address"
+            />
+            <label for="state">State</label>
+            <select id="state" name="permanent_state">
+              <option value="">Select a state...</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CG">Chhattisgarh</option>
+              <option value="DH">
+                Dadra and Nagar Haveli and Daman and Diu
+              </option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OD">Odisha</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TS">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UK">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+            </select>
+          </div>
+
+          <div class="check">
+            <input
+              type="checkbox"
+              name="same_as_above"
+              id="p-add"
+              required
+            />Same as above address
+          </div>
+        </div>
+
+        <div class="gender">
+          <h3>Gender</h3>
+          <input type="radio" name="gender" id="M" /><label for="male"
+            >Male</label
+          >
+          <input type="radio" name="gender" id="F" /><label for="female"
+            >Female</label
+          >
+        </div>
+        <div class="contact">
+          <h3>Contact Details</h3>
+          <label for="phone">Phone Number </label
+          ><input type="tel" name="number" id="phone" required />
+          <label for="phone">Another Phone Number </label
+          ><input type="tel" name="number" id="phone" />
+        </div>
+
+        <div>
+          <button
+            type="button"
+            class="nextBtn"
+            onclick="window.location.href='./moredetails.html';"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

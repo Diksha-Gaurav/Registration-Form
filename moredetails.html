@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Registration...</h1>
+    </header>
+    <div>
+      <h2>Admission Form</h2>
+    </div>
+    <div class="form" id="Addmission">
+      <form action="#">
+        <div class="Education">
+          <h3>Educational Qualification</h3>
+          <div class="HighSchool">
+            <label for="course">High School</label>
+            <input
+              type="number"
+              id="HS"
+              placeholder="obtained marks"
+              required
+            />
+            <input type="number" id="HS" placeholder="total marks" required />
+          </div>
+          <div class="Intermediate">
+            <label for="course">Intermediate</label>
+            <input
+              type="number"
+              name="inter"
+              id="inter"
+              placeholder="obtained marks"
+              required
+            />
+            <input
+              type="number"
+              name="inter"
+              id="inter"
+              placeholder="total marks"
+              required
+            />
+          </div>
+        </div>
+        <div class="course" id="UG">
+          <h3>Course</h3>
+          <select name="Course" id="Subject">
+            <option value="">Select the course to be opted</option>
+            <option value="BSc.">Bachelor of Science(B.Sc.)</option>
+            <option value="BCA">Bachelor of Computer Application(B.C.A)</option>
+            <option value="B.A.">Bachelor of Arts(B.A.)</option>
+            <option value="B.Com.">Bachelor of Commerce(B.Com.)</option>
+            <option value="B.B.A">
+              Bachelor of Business Administration(B.B.A.)
+            </option>
+            <option value="B.Tech.">Bachelor of Technology(B.Sc.)</option>
+            <option value="B.E.">Bachelor of Engineering(B.E.)</option>
+          </select>
+          <option value="BSc."></option>
+        </div>
+
+        <div class="Documents">
+          <h3>Upload Documents</h3>
+          <label for="photo">Passport Size Photo</label>
+          <input type="file" name="pic" id="photo" required />
+          <label for="photo">Signature</label>
+          <input type="file" name="pic" id="sign" required />
+        </div>
+        <div class="declare" id="dec">
+          <h3>Declearation</h3>
+          <input type="checkbox" name="declare" id="declaration" />
+          <label for="text">
+            I hereby, declearing that the information furnished above is true,
+            complete and correct to the best of my knowledge and belief.
+          </label>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="backbtn"
+            onclick="window.location.href='./index.html';"
+          >
+            Back
+          </button>
+        </div>
+        
+<div>
+  <input type="submit" value="Submit" />
+</div>
+
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
